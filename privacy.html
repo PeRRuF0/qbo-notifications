@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — qbo-notification</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+            background: #fff;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.25rem; color: #111; }
+        .app-name { font-size: 1rem; color: #666; margin-bottom: 0.5rem; }
+        .effective-date { font-size: 0.9rem; color: #888; margin-bottom: 2rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #222; }
+        p, li { font-size: 0.95rem; margin-bottom: 0.75rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+        li { margin-bottom: 0.4rem; }
+        a { color: #0066cc; }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="app-name">Mario Suclla Consulting — qbo-notification</p>
+        <p class="effective-date">Effective Date: March 30, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how the <strong>qbo-notification</strong> application ("App") operated by Mario Suclla Consulting ("we," "us," or "Operator") accesses, uses, and protects data from QuickBooks Online ("QBO"). The App is an internal-only tool used exclusively by the Operator for automated daily monitoring of QBO accounting data, with results delivered as Slack notifications. There are no public users or external end users of this App.</p>
+
+        <h2>2. Information We Access</h2>
+        <p>The App connects to QuickBooks Online via Intuit's OAuth 2.0 API and accesses the following data in a <strong>read-only</strong> capacity:</p>
+        <ul>
+            <li><strong>Account balances</strong> — specifically suspense account balances to identify items requiring review</li>
+            <li><strong>Bank feed transactions</strong> — unreviewed bank feed transaction status to flag pending items</li>
+            <li><strong>Company identifiers</strong> — Realm ID and company name for API routing and notification context</li>
+        </ul>
+        <p>The App does <strong>not</strong> access personal customer information, employee data, payment details, or any data beyond what is necessary for account monitoring.</p>
+
+        <h2>3. How Information Is Used</h2>
+        <p>QBO data accessed by the App is used exclusively for:</p>
+        <ul>
+            <li>Automated daily monitoring of suspense accounts and unreviewed bank feed transactions</li>
+            <li>Generating formatted summary notifications delivered to the Operator's private Slack channel</li>
+            <li>Internal bookkeeping and financial oversight for the Operator's clients</li>
+        </ul>
+        <p>Data is processed automatically through <a href="https://n8n.io" rel="noopener">n8n Cloud</a>, a cloud-based workflow automation platform, and is not used for any other purpose.</p>
+
+        <h2>4. Data Sharing</h2>
+        <p>We do <strong>not</strong> sell, rent, share, disclose, or otherwise make available any QBO data to third parties. All data accessed through the App remains strictly for internal use by the Operator. No QBO data is used for advertising, marketing, or profiling purposes.</p>
+
+        <h2>5. Data Storage and Retention</h2>
+        <ul>
+            <li><strong>No persistent storage:</strong> The App does not maintain a database or persistent data store of QBO data. Data is accessed, processed, and delivered in real time during each workflow execution.</li>
+            <li><strong>n8n Cloud execution logs:</strong> Workflow execution logs (which may contain transient QBO data) are retained by n8n Cloud according to their standard retention policy.</li>
+            <li><strong>Slack messages:</strong> Notification messages delivered to Slack are retained according to the Operator's Slack workspace retention settings.</li>
+        </ul>
+
+        <h2>6. Security Measures</h2>
+        <p>We implement the following measures to protect QBO data:</p>
+        <ul>
+            <li><strong>OAuth 2.0 authentication:</strong> The App uses Intuit's OAuth 2.0 protocol. No QBO usernames or passwords are stored.</li>
+            <li><strong>Encrypted credential storage:</strong> Client ID, client secret, and OAuth tokens are stored in n8n Cloud's encrypted credential store.</li>
+            <li><strong>HTTPS encryption:</strong> All API communications between the App and QuickBooks Online use HTTPS/TLS encryption.</li>
+            <li><strong>Single-operator access:</strong> Access to the App and its credentials is limited to the Operator only.</li>
+            <li><strong>Multi-factor authentication:</strong> MFA is enabled on the Intuit Developer account and n8n Cloud account.</li>
+        </ul>
+
+        <h2>7. Third-Party Services</h2>
+        <p>The App integrates with the following third-party services, each governed by their own privacy policies:</p>
+        <ul>
+            <li><strong>Intuit / QuickBooks Online</strong> — data source (<a href="https://www.intuit.com/privacy/" rel="noopener">Intuit Privacy Policy</a>)</li>
+            <li><strong>n8n Cloud</strong> — workflow automation platform (<a href="https://n8n.io/legal/privacy/" rel="noopener">n8n Privacy Policy</a>)</li>
+            <li><strong>Slack</strong> — notification delivery (<a href="https://slack.com/privacy-policy" rel="noopener">Slack Privacy Policy</a>)</li>
+        </ul>
+
+        <h2>8. Your Rights</h2>
+        <p>As this App is used exclusively by the Operator for internal purposes, there are no external end users whose data is collected or processed. If you are a QBO company administrator and have questions about how this App accesses your company's data, please contact us using the information below.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted at this URL with an updated effective date.</p>
+
+        <h2>10. Contact Information</h2>
+        <p>For questions about this Privacy Policy or the App's data practices, contact:</p>
+        <p>
+            Mario Suclla Consulting<br>
+            Email: <a href="mailto:mario@mariosucllaconsulting.com">mario@mariosucllaconsulting.com</a><br>
+            Website: <a href="https://mariosucllaconsulting.com">mariosucllaconsulting.com</a>
+        </p>
+
+        <div class="footer">
+            &copy; 2026 Mario Suclla Consulting. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
