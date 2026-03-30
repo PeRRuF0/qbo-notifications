@@ -11,13 +11,11 @@ Use this document as a reference when filling out the Intuit Developer Portal. C
 
 | Field | Value |
 |---|---|
-| **Host Domain** | `mariosucllaconsulting.com` |
-| **EULA URL** | `https://<your-github-pages-url>/eula.html` |
-| **Privacy Policy URL** | `https://<your-github-pages-url>/privacy.html` |
+| **Host Domain** | `perruf0.github.io` |
+| **EULA URL** | `https://perruf0.github.io/qbo-notifications/eula.html` |
+| **Privacy Policy URL** | `https://perruf0.github.io/qbo-notifications/privacy.html` |
 | **Launch URL** | `https://biglakeslawncare.app.n8n.cloud/rest/oauth2-credential/callback` |
-| **Disconnect URL** | `https://<your-github-pages-url>/disconnect.html` |
-
-> **ACTION NEEDED:** Replace `<your-github-pages-url>` with your actual GitHub Pages URL once deployed (e.g., `mariosuclla.github.io/qbo-notifications` or your custom domain).
+| **Disconnect URL** | `https://perruf0.github.io/qbo-notifications/disconnect.html` |
 
 ---
 
